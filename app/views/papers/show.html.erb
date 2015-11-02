@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<p> <%= @paper.title %></p>
+<p>Image: <%= image_tag @paper.pdf_url(:web_thumb) %></p>
+
+<%= link_to 'Edit', edit_paper_path(@paper) %> |
+<%= link_to 'Back', papers_path %>
